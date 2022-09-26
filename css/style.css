@@ -1,0 +1,130 @@
+.space {
+    grid-area: space;
+    background-color:rgb(255, 255, 255);
+}
+aside {
+    grid-area: aside;
+    background-color: rgb(63, 183, 187);
+    color:rgb(255, 255, 255);
+}
+main {
+    padding-left: 30px;
+    grid-area: main;
+    background-color:rgb(255, 255, 255);
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+body {
+    background-color: #e6e6e6;
+    margin: 40px 275px 0px 275px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "space aside main";
+    grid-template-columns: 40px 300px 1fr;
+    grid-template-rows: 100%;
+    font-family: sans-serif;
+
+}
+.profile-photo {
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+.contact {
+    justify-content: center;
+    height: auto;
+}
+.title {
+    text-align: right;
+}
+h1 {
+    margin-right: 10px;
+    margin-top: 40px;
+    margin-bottom: 8px;
+    font-size: 40px;
+    font-weight: bolder;
+    color:rgb(194, 194, 194);
+}
+.group {
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 20px;
+    color:rgb(136, 136, 136);
+}
+h2 {
+    margin-top: 50px;
+    font-size: 20px;
+    color:rgb(111, 111, 111);
+    font-weight: bold;
+    width: 100%;
+}
+p, span {
+    color:rgb(111, 111, 111);
+}
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px 40px;
+    margin-top: 10px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+.skill {
+    margin-left: 15px;
+    display: inline-block;
+    background-color: #e6e6e6;
+    border-radius: 4px;
+    width: 150px;
+    height: 15px;
+    float: right;
+}
+.skill > div {
+    background-color: rgb(63, 183, 187);
+    border-radius: 4px;
+    margin-right: 20px;
+    height:15px;
+}
+.contact {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+img {
+    margin: 40px;
+    width: 220px;
+    border-radius: 6px;
+}
+h3 {
+    margin-top: 15px;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: center;
+}
+ul {
+    margin-top: 35px;
+}
+li {
+    height: 50px;
+}
+i {
+    margin-right: 10px;
+}
+#hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 8px;
+    gap: 15px;
+}
+#hobbies-grid > li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+#hobbies-grid > li > i {
+    justify-content: center;
+}
